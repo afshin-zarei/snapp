@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  font-family: IRANSans;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 9.5rem;
+}
+
+header {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+header .brand {
+  line-height: 0.88rem;
+}
+header .brand img {
+  padding-right: 2.5rem;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  padding: 0 1.5rem;
+}
+header ul li:nth-child(1) {
+  margin-right: 1.2rem !important;
+}
+header ul a {
+  color: #666;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  line-height: normal;
+  color: #3f3f3f;
+}
+
+.container .main {
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .main_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.container .main .main_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateY(180deg);
+}
+.container .main .main_right {
+  width: 50%;
+  height: 100%;
+  padding: 0 26rem 0 2rem;
+  background-color: #21aa58;
+  color: #fff;
+}
+.container .main .main_right h1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  color: #fff;
+  padding: 30px 0;
+}
+.container .main .main_right p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  color: #fff;
+  padding-bottom: 2.5rem;
+}
+.container .main .main_right .sendEmail {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.container .main .main_right .sendEmail input {
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #eee;
+  color: #eee;
+  padding: 0.8rem 2.4rem;
+  font-size: 1.7rem;
+  margin-left: 15px;
+}
+.container .main .main_right .sendEmail input::placeholder {
+  color: #eee;
+}
+.container .main .main_right .sendEmail a {
+  background-color: #fff;
+  padding: 0.9rem 2.8rem;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: normal;
+  color: #00d16f;
+}
+.container .main .main_right .application_snap {
+  display: inline-block;
+  width: 26.08rem;
+  text-align: center;
+  border: 0.2rem solid #eee;
+  padding: 1rem 4rem;
+  border-radius: 8px;
+  color: #eee;
+  margin: 3rem 0;
+  transition: all 0.3s;
+}
+.container .main .main_right .application_snap:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.market_img {
+  width: 120rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.market_img ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.market_img ul li {
+  width: 17rem;
+  height: 5rem;
+}
+.market_img ul li a {
+  width: 100%;
+  height: 100%;
+}
+.market_img ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .service {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+.container .service .main_service {
+  width: 98rem;
+  height: auto;
+  margin: 0 auto;
+}
+.container .service .main_service h1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #4a4a4a;
+  padding: 4rem 0;
+}
+.container .service .main_service ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .service .main_service li {
+  width: calc(33.3333333% - 3rem);
+  height: 8rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  margin: 1.6rem auto;
+}
+.container .service .main_service li a {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 1rem;
+  height: 100%;
+}
+.container .service .main_service li a img {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+.container .service .main_service li a div {
+  margin-right: 1rem;
+}
+.container .service .main_service li a h4 {
+  color: #262626;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+.container .service .main_service li a p {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.banner_food {
+  width: 105rem;
+  height: 30rem;
+  border-radius: 1rem;
+  margin: 7rem auto;
+}
+.banner_food img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.super-snapp {
+  width: 100%;
+  height: 43rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.super-snapp .super-snapp_right {
+  width: 50%;
+  height: 100%;
+}
+.super-snapp .super-snapp_right img {
+  width: 100%;
+  height: 100%;
+}
+.super-snapp .super-snapp_left {
+  width: 50%;
+  height: 100%;
+  padding: 5rem;
+  padding-left: 23rem;
+}
+.super-snapp .super-snapp_left h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #363636;
+}
+.super-snapp .super-snapp_left p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 2.4rem;
+  color: #636363;
+  text-align: justify;
+}
+
+.propertys {
+  width: 95rem;
+  height: 33rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -7rem;
+  margin: 0 auto;
+}
+.propertys .box {
+  width: calc(33.3333333% - 3rem);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.propertys .box div {
+  width: 29rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.8rem;
+  background-color: #f2f5f8;
+}
+.propertys .box h3 {
+  width: 100%;
+  height: auto;
+  margin: 1.6rem 0;
+  font-size: 1.7rem;
+}
+.propertys .box p {
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 2rem;
+  color: #404040;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+section .register {
+  width: 105rem;
+  height: 100%;
+  margin: -4rem auto 0;
+  padding: 4rem 0;
+  text-align: center;
+}
+section .register h2 {
+  font-size: 3.2rem;
+  color: #4b4b4b;
+}
+section .register p {
+  font-size: 1.7rem;
+  padding: 2rem;
+  color: #636363;
+}
+section .register .btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  margin: 1rem 0 6rem;
+  border-radius: 1rem;
+  font-size: medium;
+  font-weight: 600;
+  background-color: #21aa58;
+  color: #fff;
+}
+section .register video {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.end {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  padding: 2rem 0;
+}
+.end .end_box {
+  width: 120rem;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.end .end_box ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.end .end_box ul li {
+  width: 48%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.end .end_box ul li img {
+  width: 13rem;
+  height: auto;
+}
+.end .end_box ul li h3 {
+  font-size: 1.6rem;
+  padding-top: 1.5rem;
+}
+.end .end_box ul li p {
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #404040;
+}
+
+.footer {
+  width: 100%;
+  height: 38rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.footer footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120rem;
+  height: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+.footer footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer footer :nth-child(1) {
+  font-size: 1.4rem;
+  color: #404040;
+}
+.footer footer :nth-child(1) a {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.footer footer .social li i {
+  font-size: 3rem;
+  margin: 0 0.8rem;
+}
+
+@font-face {
+  font-family: "IRANSans";
+  src: url("../../rec/font/IRANSans.eot");
+  src: url("../../rec/font/?#iefix") format("embedded-opentype"), url("../../rec/font/IRANSans.woff2") format("woff2"), url("../../rec/font/IRANSans.woff") format("woff"), url("../../rec/font/IRANSans.ttf") format("truetype"), url("../../rec/font/IRANSans.svg#IRANSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSans";
+  src: url("../../rec/font/IRANSans_1.eot");
+  src: url("../../rec/font/IRANSans_1.eot?#iefix") format("embedded-opentype"), url("../../rec/font/IRANSans_1.woff2") format("woff2"), url("../../rec/font/IRANSans_1.woff") format("woff"), url("../../rec/font/IRANSans_1.ttf") format("truetype"), url("../../rec/font/IRANSans_1.svg#IRANSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,348 @@
+.header {
+   @include flex(center, center);
+   @include w_h(100%, 9.5rem);
+}
+
+header {
+   @include w_h(1200px, 100%);
+   @include flex(start, center);
+
+   .brand {
+      line-height: 0.88rem;
+      img {
+         padding-right: 2.5rem;
+      }
+   }
+
+   ul {
+      @include flex(center, center);
+
+      li {
+         padding: 0 1.5rem;
+
+         &:nth-child(1) {
+            margin-right: 1.2rem !important;
+         }
+      }
+
+      a {
+         color: $gray;
+         @include font-text(1.4rem, lighter, normal, $gray_3f);
+      }
+   }
+}
+
+.container .main {
+   @include w_h(100%, 45rem);
+   @include flex(center, center);
+
+   .main_left {
+      @include flex(center, center);
+      @include w_h(50%, 100%);
+
+      img {
+         @include w_h(100%, 100%);
+         object-fit: cover;
+         transform: rotateY(180deg);
+      }
+   }
+
+   .main_right {
+      @include w_h(50%, 100%);
+      padding: 0 26rem 0 2rem;
+      background-color: $green;
+      color: $white;
+
+      h1 {
+         @include flex(left, center);
+         @include font-text(2.2px, 700, 5.2rem, #fff);
+         padding: 30px 0;
+      }
+
+      p {
+         @include font-text(1.8rem, 400, 3.5rem, #fff);
+         padding-bottom: 2.5rem;
+      }
+
+      .sendEmail {
+         @include flex(start, center);
+         @include w_h(100%, auto);
+
+         input {
+            background-color: $transparent;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            border-bottom: 0.1rem solid $gray_eee;
+            color: $gray_eee;
+            padding: 0.8rem 2.4rem;
+            font-size: 1.7rem;
+            margin-left: 15px;
+            &::placeholder {
+               color: $gray_eee;
+            }
+         }
+
+         a {
+            background-color: $white;
+            padding: 0.9rem 2.8rem;
+            border-radius: 5px;
+            @include font-text(1.3rem, 600, normal, $green_00);
+         }
+      }
+
+      .application_snap {
+         display: inline-block;
+         width: 26.08rem;
+         text-align: center;
+         border: 0.2rem solid $gray_eee;
+         padding: 1rem 4rem;
+         border-radius: 8px;
+         color: $gray_eee;
+         margin: 3rem 0;
+         transition: all 0.3s;
+
+         &:hover {
+            background-color: $bg_white_opacity;
+         }
+      }
+   }
+}
+
+.market_img {
+   @include w_h(120rem, 20rem);
+   @include flex(center, center);
+   margin: 0 auto;
+
+   ul {
+      @include w_h(100%, auto);
+      @include flex(center, center);
+      flex-wrap: wrap;
+      gap: 4rem;
+      li {
+         @include w_h(17rem, 5rem);
+         a {
+            @include w_h(100%, 100%);
+            img {
+               @include w_h(100%, 100%);
+            }
+         }
+      }
+   }
+}
+
+.container .service {
+   @include w_h(100%, 100%);
+   background-color: $gray_eee;
+
+   .main_service {
+      @include w_h(98rem, auto);
+      margin: 0 auto;
+
+      h1 {
+         @include w_h(100%, auto);
+         @include flex(center, center);
+         font-size: 3rem;
+         color: $gray_4a;
+         padding: 4rem 0;
+      }
+
+      ul {
+         @include w_h(100%, auto);
+         @include flex(space-between, center);
+         flex-wrap: wrap;
+      }
+
+      li {
+         @include w_h(calc(33.3333333% - 3rem), 8rem);
+         border-radius: 2rem;
+         background-color: $white;
+         margin: 1.6rem auto;
+
+         a {
+            @include flex(right, center);
+            padding-right: 1rem;
+            height: 100%;
+            img {
+               @include w_h(6.5rem, 6.5rem);
+            }
+            div {
+               margin-right: 1rem;
+            }
+            h4 {
+               color: $gray_26;
+               margin-bottom: 0.8rem;
+               font-size: 1.3rem;
+            }
+            p {
+               color: $gray_8;
+               font-size: 1.1rem;
+            }
+         }
+      }
+   }
+}
+
+.banner_food {
+   @include w_h(105rem, 30rem);
+   border-radius: 1rem;
+   margin: 7rem auto;
+   img {
+      @include w_h(100%, 100%);
+      border-radius: 1rem;
+      cursor: pointer;
+   }
+}
+
+.super-snapp {
+   @include w_h(100%, 43rem);
+   @include flex(center, center);
+   padding-top: 2rem;
+
+   .super-snapp_right {
+      @include w_h(50%, 100%);
+      img {
+         @include w_h(100%, 100%);
+      }
+   }
+
+   .super-snapp_left {
+      @include w_h(50%, 100%);
+      padding: 5rem;
+      padding-left: 23rem;
+
+      h2 {
+         font-size: 2rem;
+         margin-bottom: 2rem;
+         color: $gray_36;
+      }
+      p {
+         @include font-text(1.3rem, 100, 2.4rem, $gray_63);
+         text-align: justify;
+      }
+   }
+}
+
+.propertys {
+   @include w_h(95rem, 33rem);
+   @include flex(space-between, center);
+   position: relative;
+   top: -7rem;
+   margin: 0 auto;
+   .box {
+      @include w_h(calc(33.3333333% - 3rem), 100%);
+      @include flex(center, center);
+      flex-direction: column;
+      div {
+         @include w_h(29rem, 20rem);
+         @include flex(center, center);
+         border-radius: 1.8rem;
+         background-color: $gray_f;
+      }
+      h3 {
+         @include w_h(100%, auto);
+         margin: 1.6rem 0;
+         font-size: 1.7rem;
+      }
+      p {
+         @include font-text(1.1rem, 100, 2rem, $gray_40);
+      }
+   }
+}
+
+section {
+   @include w_h(100%, 100%);
+   background-color: $gray_eee;
+   .register {
+      @include w_h(105rem, 100%);
+      margin: -4rem auto 0;
+      padding: 4rem 0;
+      text-align: center;
+      h2 {
+         font-size: 3.2rem;
+         color: $gray_4b;
+      }
+      p {
+         font-size: 1.7rem;
+         padding: 2rem;
+         color: $gray_63;
+      }
+      .btn {
+         display: inline-block;
+         padding: 1rem 3rem;
+         margin: 1rem 0 6rem;
+         border-radius: 1rem;
+         font-size: medium;
+         font-weight: 600;
+         background-color: $green;
+         color: $white;
+      }
+      video {
+         @include w_h(100%, auto);
+         border-radius: 1rem;
+      }
+   }
+}
+
+.end {
+   @include w_h(100%, 100%);
+   background-color: $gray_eee;
+   padding: 2rem 0;
+   .end_box {
+      @include w_h(120rem, auto);
+      margin: 0 auto;
+      @include flex(space-between, center);
+      flex-wrap: wrap;
+      ul {
+         @include flex(space-between, center);
+         flex-wrap: wrap;
+         li {
+            @include w_h(48%, auto);
+            @include flex(center, center);
+            padding: 2rem;
+            margin: 1rem;
+            background-color: $white;
+            border-radius: 1rem;
+            img {
+               @include w_h(13rem, auto);
+            }
+            h3 {
+               font-size: 1.6rem;
+               padding-top: 1.5rem;
+            }
+            p {
+               padding: 1.5rem 0 1.5rem 1.5rem;
+               @include font-text(1.3rem, 400, 2.4rem, #404040);
+            }
+         }
+      }
+   }
+}
+
+.footer {
+   @include w_h(100%, 38rem);
+   @include flex(center, center);
+   background-color: $white;
+   footer {
+      @include flex(space-between, center);
+      @include w_h(120rem, 100%);
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 5rem 0;
+      ul {
+         @include flex(space-between, center);
+      }
+      :nth-child(1) {
+         font-size: 1.4rem;
+         color: #404040;
+         a {
+            display: inline-block;
+            margin: 0 1rem;
+         }
+      }
+      .social li i {
+         font-size: 3rem;
+         margin: 0 0.8rem;
+      }
+   }
+}
